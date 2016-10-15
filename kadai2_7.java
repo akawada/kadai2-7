@@ -17,7 +17,9 @@ public class kadai2_7 {
 			// フィボナッチ数列出力
 			else{
 				num = Integer.parseInt(strin);
-				System.out.println(num + "番目のフィボナッチ数=" + fibonacci(num));
+				for (int i = 0; i <= num; i++) {
+					System.out.println(i + "番目のフィボナッチ数=" + fibonacci(i));
+				}
 				scan.close();
 				break;
 			}
@@ -25,7 +27,12 @@ public class kadai2_7 {
 	}
 	
 	private static int fibonacci(int n) {
-		return n <= 2 ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
+		if (n == 0){
+			return n;
+		}
+		else{
+			return n <= 2 ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
+		}
 	}
 	
 	// 数値チェック
