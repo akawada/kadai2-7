@@ -11,7 +11,7 @@ public class kadai2_7 {
 			System.out.println("1~30の数値を入力してください");
 			strin = scan.next();
 			// 数値チェック
-			if (chknum(strin) == false){
+			if (!chknum(strin)){
 				System.err.println("不正な数値です。もう一度入力してください。");				
 			}
 			// フィボナッチ数列出力
